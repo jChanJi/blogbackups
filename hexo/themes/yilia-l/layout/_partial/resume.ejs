@@ -1,0 +1,72 @@
+<div class="resume" id="resume">
+    <ul id="centerwell">
+        <li id="aboutMe">
+            <h3></h3>
+            <div>
+                <h2 style="margin-top:10px;">About Me</h2>
+                <label>姓名:Chanji</label>
+                <label>出生日期:1996/03/04</label>
+                <label style="margin-right:20px">QQ:1138552873</label>
+                </br>
+                <label style="margin-right:20px">学校:金陵科技学院 软件工程</label>
+                <label>邮件:1138552873@qq.com</label>
+                <label>Website:<a href="http://www.jchanji.top">www.jchanji.top</a>
+                </label>
+            </div>
+
+        </li>
+        <li id="work">
+            <h3></h3>
+            <div>
+                <h2 style="margin-top:10px;">兴趣爱好</h2>
+                <label>迷茫中的IT弱鸡</label>
+                </br>
+                <label>web前端，后端，大数据，机器学习，深度学习，都是入门前一级</label>
+                </br>
+                <label>跑步成了运动能力下降的新爱好</label>
+            </div>
+
+        </li>
+        <li id="close" style="float:right;width:40px;">
+            <a class="ck-prev" href="javascript:;">上一张</a>
+        </li>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            var $centerwell_first = $('#centerwell li:first');
+            /* $centerwell_first.animate({
+            width: '400px'
+        }, 300);
+        $centerwell_first.find('h3').animate({}, 300);
+       */
+            /*'#centerwell li').click(function() {
+            window.open($(this).find('a').attr('href'));
+        });
+        */
+            $('#centerwell li').mouseenter(function() {
+                if (!$(this).is(':animated') && $(this).attr("id") != "close") {
+                    $(this).animate({
+                        width: '600'
+                    }, 300).siblings().not("#close").animate({
+                        width: '140px'
+                    }, 300);
+
+                    $(this).find('h3').animate({
+                        backgroundPosition: '-140px'
+                    }, 300).parent().siblings().find('h3').animate({
+                        backgroundPosition: '0px'
+                    }, 300);
+                }
+
+            });
+            $("#close").mouseenter(function() {
+                $('#centerwell li:not(#close)').animate({
+                    width: '140px'
+                }, 300);
+                $('#centerwell li:not(#close)').find("h3").animate({
+                    backgroundPosition: '0px'
+                }, 300);
+            });
+        });
+    </script>
+</div>

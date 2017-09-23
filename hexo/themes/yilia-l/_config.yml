@@ -1,0 +1,72 @@
+# Header
+menu:
+  主页: /
+  大数据: /categories/bigdata
+  机器学习: /categories/machinelearning
+  文章: /categories/articals
+  其他: /categories/others
+# Subav
+subnav:
+  github: https://github.com/jChanJi
+  #weibo: "#"
+  rss: atom.xml
+  #zhihu: "#"
+  #qq: "#"
+  #weixin: "#"
+  #jianshu: "#"
+  #douban: "#"
+  #segmentfault: "#"
+  #bilibili: "#"
+  #acfun: "#"
+  mail: "1138552873@qq.com"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+# Content
+excerpt_link: More
+archive_yearly: true #按年存档
+fancybox: true
+mathjax: true
+
+# Miscellaneous
+google_analytics: ''
+favicon: /img/leaves.ico
+
+#你的头像url
+avatar: https://raw.githubusercontent.com/jChanJi/static_resource/master/head.png
+#是否开启分享
+baidushare: true
+#是否开启云标签
+tagcloud: true
+
+#是否开启多说
+#duoshuo_shortname: kiritor
+#是否开启多说最近评论:悬浮于首页
+#recentComment: true
+
+#是否开启最近通知
+#recent: true
+#recentContent: 最近研究shiro中......
+
+#是否开启微简历
+resume: true
+
+#是否开启友情链接
+#不开启——
+friends: false
+#开启——
+#friends:
+  #奥巴马的博客: http://localhost:4000/
+  #卡卡的美丽传说: http://localhost:4000/
+   #本泽马的博客: http://localhost:4000/
+  #吉格斯的博客: http://localhost:4000/
+  #习大大大不同: http://localhost:4000/
+  #托蒂的博客: http://localhost:4000/
+
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+#开启——
+aboutme: Love Live,Love Refliction,Love Coding，Have dreams !
