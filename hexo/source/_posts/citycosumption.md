@@ -1,10 +1,9 @@
 ---
-title: 机器学习-无监督学习-聚类K-means算法-对31省消费水平分类
+title: K-means算法-对31省消费水平分类
 toc: true
-categories: 
+categories:
     -machinelearning
 tags: [python,machinelearning,K-means]
-
 ---
 ## 前言：
 >此篇笔记主要根据南京大学礼欣老师的[《Python机器学习应用》](http://www.icourse163.org/learn/BIT-1001872001?tid=1001965001#/learn/announce)整理而成，详细内容请看礼欣老师的mooc课程。
@@ -32,8 +31,8 @@ tags: [python,machinelearning,K-means]
 ```python
 import numpy as np
 from sklearn.cluster import KMeans
- 
- 
+
+
 def loadData(filePath):
     fr = open(filePath,'r+')
     lines = fr.readlines()
@@ -44,8 +43,8 @@ def loadData(filePath):
         retCityName.append(items[0])
         retData.append([float(items[i]) for i in range(1,len(items))])
     return retData,retCityName
- 
-     
+
+
 if __name__ == '__main__':
     data,cityName = loadData('F:/data/clustering/city.txt')
     km = KMeans(n_clusters=4)

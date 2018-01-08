@@ -31,7 +31,7 @@ fancybox: true
 mathjax: true
 
 # Miscellaneous
-google_analytics: ''
+#google_analytics: ''
 favicon: /img/leaves.ico
 
 #你的头像url

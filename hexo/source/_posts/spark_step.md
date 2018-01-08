@@ -6,6 +6,8 @@ categories:
 tags: [spark,big data]
 
 ---
+
+
 ## 前言
 >本教程为spark的伪分布式教程，学生党条件有限所以伪分布式应该是比较好的选择。其中要注意的是版本匹配的问题。
 
@@ -39,7 +41,7 @@ sudo chown -R hadoop:hadoop ./spark
    ./spark-shell
 ```
 
-### 4、运行代码 
+### 4、运行代码
 
 ```markdown
 5、val lines = sc.textFile(“../test/hellospark”)
@@ -51,6 +53,6 @@ sudo chown -R hadoop:hadoop ./spark
 ```markdown
    cd /usr/local/spark/conf
    cp  log4j.properties.template  log4j.properties   
-   sudo vim log4j.properties 
+   sudo vim log4j.properties
 ```
    将其中的rootCategory=INFO 改为 WARN
